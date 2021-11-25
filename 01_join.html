@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="homepage.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <header><div id="header" class="container">
+        <div id="logo">
+            <h1><a href="index.html">Yujeong</a></h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="01_login.html">join/login</a></li>
+                <li><a href="02_about_me.html">About Me</a></li>
+                <li><a href="03_interest.html">Interest</a></li>
+                <li><a href="#">Load Map</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+    <section id="section1">
+    <table id="table2">
+        <thead>
+            <tr>
+                <tr height= "20px"></tr>
+                <th id="j" colspan="3">★ 회원가입 ★</th>
+                <tr height= "40px"></tr>
+        </thead>
+        <tbody>
+
+            <!-- <td rowspan="5" width= "10px"></td> -->
+            <th>이름<span class="reg">*</span></th>
+            <td>
+                <input type="text" name="userName" id="userName" > 
+            </td>
+        </tr>
+        <tr>
+            <th>아이디<span class="reg">*</span></th>
+            <td>
+                <input type="text" name="userId" id="userId" >
+            </td>
+            <tr>
+                <td colspan="2">
+                    <p>아이디는 숫자 1개이상을 포함한 4~12자리</p>
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <th>비밀번호<span class="reg">*</span></th>
+            <td>
+                <input type="password" name="pwd" id="pwd" >
+            </td>
+        </tr>
+        <tr>
+            <th>비밀번호확인<span class="reg">*</span></th>
+            <td>
+                <input type="password" id="pwdCheck">
+            </td>
+            <tr>
+                <td colspan="2">
+                    <p>비밀번호는 영문/숫자/특수문자(*!&@) 포함한 8~12자리</p>
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <th>이메일<span class="reg">*</span></th>
+            <td>
+                <input type="email" name="email" id="email" >
+            </td>
+        </tr>
+       
+        </tbody>
+        <tr>
+            <td colspan="3" height= "70px">
+                <button id="submit"> 회원가입</button>&nbsp;
+            </td>
+        </tr>
+    </table>
+    </section>
+    <footer>
+        <p>&copy; Yujeong.2021.All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        // 아이디검사
+        userId.onblur = () => {
+
+            if(!/^.{4,12}$/.test(userId.value)) {
+                alert("아이디는 4~12자리여야 합니다.");
+                return;
+            }
+            if(!/^[a-z][a-z\d]/.test(userId.value)) {
+                alert("아이디는 영어 소문자로 시작해야 합니다.");
+                return;
+            }
+            if(!/[0-9]/.test(userId.value)) {
+                alert("아이디는 숫자를 1개 이상 포함해야 합니다.");
+                return;
+            }
+        };
+
+        // 비번검사
+        pwd.onblur = () => {
+
+            if(!/^.{8,12}$/.test(pwd.value)) {
+                alert("비밀번호는 8~12자리여야 합니다.");
+                return;
+            }
+
+            if(!/[a-zA-Z]/.test(pwd.value) || !/[0-9]/.test(pwd.value)){
+                alert("비밀번호는 영문자/숫자를 포함해야 합니다.");
+                return;
+            }
+
+            if(!/[*!&@]/.test(pwd.value)){
+                alert("비밀번호는 특수문자(*!@)를 포함해야 합니다.");
+                return;
+            }
+
+            alert("유효한 비밀번호입니다.");
+        };
+
+    </script>
+  
+</body>
+</html>

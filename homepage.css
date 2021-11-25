@@ -1,0 +1,343 @@
+	html, body {
+		height: 100%;
+	}
+	
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 12pt;
+		font-weight: 200;
+		color: #FFF;
+	}
+	
+	
+	h1, h2, h3 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	p, ol, ul {
+		margin-top: 0;
+	}
+	
+	ol, ul {
+		padding: 0;
+		list-style: none;
+	}
+	
+	p {
+		line-height: 180%;
+	}
+	
+	.container {
+		overflow: hidden;
+		margin: 0em auto;
+	}
+
+	#header {
+		position: relative;
+		background-color: white;
+		padding: 30px 10px 50px 10px;
+	}
+
+
+/* 버튼 */
+
+	.button {
+		padding: 1em 2em 1em 2em;
+		letter-spacing: 0.10em;
+		margin-top: 2em;
+		padding: 1.40em 3em;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1em;
+		color: #3f0900;
+	}
+	
+	.button:hover {
+		background-color: rgb(246, 246, 246);
+		
+	}
+		
+
+/* logo */
+
+	#logo
+	{
+		position: absolute;
+		top: 30px;
+		left: 70px;
+		text-decoration: none;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: rgb(66, 66, 66);
+	}
+
+/* 메뉴 */
+
+	#menu
+	{
+		position: relative;
+		top: 10px;
+		left: 750px;
+	}
+	
+	#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	
+	#menu li a, #menu li span {
+		padding: 1em 1.5em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: rgba(59, 59, 59, 0.8);
+	}
+
+	
+	#menu .active a {
+		/* background: #f3cc2f; */
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
+		color: #3f0900;
+	}
+	
+
+/* 00_index */
+
+	#section0 {
+		position: relative;
+		background-size: cover;
+		background: white url(images/watercolor-gd306363ab_1920.jpg) fixed center;
+		text-align: center;
+		height: 300px;
+		padding: 5em 0em;
+		
+	}
+	
+	#section0 .title h2 {
+		font-size: 4em;
+	}
+	
+	#section0 .title .stitle
+	{
+		font-size: 2em;
+	}
+	
+	#section0 .button {
+		margin-top: 10em;
+		padding: 1em 3em;
+		border-radius: 6px;
+		font-weight: 700;
+		font-size: 1em;
+		
+	}
+	
+	.banner {
+		margin-bottom: 5em;
+	}
+
+/* footer */
+
+	footer {
+		height: 30px;
+		overflow: hidden;
+		padding: 20px;
+		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+	
+	footer p
+	{
+		text-align: center;
+		font-size: 1em;
+		color: black;
+	}
+	
+/* 02_about_me*/
+
+	#section2 {
+		background-color: rgb(246, 246, 246);
+	}
+
+	#me caption {
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: -70px;
+		height: 150px;
+	}
+
+	.title h2 {
+		font-size: 40px;
+		font-weight: bold;
+		color: rgba(0,0,0,0.8);
+	}
+
+	.title .stitle {
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.6);
+		text-align: center;
+		color: rgba(0,0,0,.5);
+	}
+
+	#me  tr td {
+		width: 500px;
+		height: 250px;
+	}
+
+	#me tr td .a {
+		font-size: 25px;
+		color: #3f0900;
+		font-weight: bold;
+	}
+
+	/* #me tr td :hover {
+		box-shadow: 5px 5px 10px 3px gray;
+	} */
+
+	#me
+	{
+		text-align: center;
+		color: rgba(0,0,0,0.6);
+	}
+
+
+/* login */
+
+	#section1 {
+		background-color:rgb(246, 246, 246);
+		/* width: 1024px; */
+		text-align: center;
+		height: 400px;
+		padding: 5em 0em;
+	}
+
+	#table1 {
+		margin-left: 35%;
+		margin-right: 35%;
+		margin-top: 5rem;
+		color: black;
+		border-radius: 5%;
+		background-color: white;
+		width: 450px;
+	}
+	
+	#table1 th {
+		width: 100px;
+		height: 20px;
+	}
+	
+	
+	#login {
+		text-align: center;
+	}
+	#table1 ul li {
+		text-align: center;
+	}
+	
+	tbody {
+		font-family: 'Didact Gothic', sans-serif;
+
+	}
+	
+	#submit {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	
+	#table1 ul li a {
+		color: #3f0900;
+	}
+	
+	/* join */
+
+
+	#table2 {
+		margin-left: 27rem;
+		margin-top: -20px;
+		color: black;
+		border-radius: 5%;
+		background-color: white;
+		width: 500px;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	#j {
+		text-align: center;
+	}
+
+	.btn-wrapper {
+		height: 100px;
+		text-align: center;
+	}
+
+	#table2 p {
+		font-size: small;
+	}
+
+/* 03_interest */
+
+
+	#section3 {
+		background-color: rgb(246, 246, 246);
+	}
+
+	img {
+		width: 100px;
+		height: 100px;
+	}
+	
+	.pic, .pic2 {
+		display: none;
+	}
+
+	#i li:hover .pic{
+		box-shadow: 5px 5px 10px 3px gray;
+		display: flex;
+        width: 300px;
+		height: 300px;
+		position: absolute;
+	}
+
+	#i li:hover .pic2 {
+		box-shadow: 5px 5px 10px 3px gray;
+		display: flex;
+        width: 300px;
+		height: 300px;
+		transform: translate(1px, -408px);
+		position: absolute;
+	}
+
+	#i ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	#i li {
+		padding-left: 10px;
+	}
+	#i tr td ul li img:hover {
+		box-shadow: 5px 5px 10px 3px gray;
+	}
+
+	#i  tr td {
+		width: 500px;
+		height: 250px;
+	}
+
+	#i tr td .a {
+		font-size: 25px;
+		color: #3f0900;
+		font-weight: bold;
+	}
